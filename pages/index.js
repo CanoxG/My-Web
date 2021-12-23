@@ -93,11 +93,11 @@ export default function Home() {
         </Section>
         <Section>
           {/* <-- Techs --> */}
-          <h2 className="text-2xl text-center font-black">
+          <h2 className="text-lg sm:text-xl text-center font-black">
             Technologies We Work With
           </h2>
           <Separator />
-          <div className="items-baseline grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-7 pt-4">
+          <div className="items-baseline grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-16 pt-4">
             <Card text="HTML" src={"html.svg"} alt={"Html"} />
             <Card text="Tailwind" src={"tailwindcss.svg"} alt={"Tailwind"} />
             <Card text="React Js" src={"react.svg"} alt={"react Js"} />
@@ -113,7 +113,19 @@ export default function Home() {
           </div>
         </Section>
       </div>
-      <Process />
+      <Process>
+        <Card title={"Coffee Meeting"} src={"coffee.svg"} alt={"coffee"} />
+        <Card title={"Research"} src={"search.svg"} alt={"search"} />
+        <Card title={"Design"} src={"design.svg"} alt={"design"} />
+        <Card title={"Development"} src={"dev.svg"} alt={"dev"} />
+        <Card title={"Delivery"} src={"delivery.svg"} alt={"delivery"} />
+        <Card
+          title={"Maintenance"}
+          src={"maintenance.svg"}
+          alt={"maintenance"}
+        />
+      </Process>
+
     </Layout>
   );
 }
