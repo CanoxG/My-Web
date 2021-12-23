@@ -1,0 +1,21 @@
+import React from "react";
+import Text from "../text/Text";
+import Separator from "../separator/Separator";
+
+export default function About() {
+  return (
+    <div className="text-center text-lg">
+      <h1 className="font-sans font-black text-2xl pt-14">
+        WE ARE LORIEN AGENCY
+      </h1>
+   <Separator/>
+      <Text>
+        <strong>Lorien</strong> is a web solutions company which helps clients
+        to integrate custom responsive web applications and mobile applications
+        into their businesses. We bring digital transformation to big companies,
+        medium-sized agencies, and smaller startups. With an ever developing online world, it’s important for your
+        business to stand out in the online industry - this is where Lorien Agency comes in.
+      </Text>
+    </div>
+  );
+}

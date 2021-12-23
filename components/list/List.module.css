@@ -1,0 +1,14 @@
+.mainMenu {
+    display: flex;
+}
+
+@media only screen and ( max-width: 641px) {
+    .mainMenu {
+        display: none;
+    }
+}
+
+.listItem:hover {
+    color: #eeceb0;
+    transition: color 1s ease-in-out;
+}
