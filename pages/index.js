@@ -71,25 +71,25 @@ export default function Home() {
         </Section>
         <Section>
           {/* <-- Services --> */}
-          <div className="grid grid-cols-1 gap-16 sm:grid-cols-2">
-            <div className='span-2'>
-              <Card
-                text="The tech of the back end is a combination of servers, applications, and databases.
+          <Wrapper>
+            <Card
+              text="The tech of the back end is a combination of servers, applications, and databases.
                       Responsibilities of backend programmers could involve writing APIs,
                       writing code to interact with a database,
                       creating libraries, working on business processes and data architecture,
                       and much more.
                       It often depends on the specific role and company."
-                title="Database"
-                src={"mongodb.svg"}
+              title="Database"
+              src={"mongodb.svg"}
+            />
+            <div className="sm:col-start-3">
+              <Card
+                title="Google Analytics"
+                text="We can integrate your web application with Google to track your websites performance."
+                src={"google-analytics.svg"}
               />
             </div>
-            <Card
-              title="Google Analytics"
-              text="We can integrate your web application with Google to track your websites performance."
-              src={"google-analytics.svg"}
-            />
-          </div>
+          </Wrapper>
         </Section>
         <Section>
           {/* <-- Techs --> */}
@@ -98,14 +98,18 @@ export default function Home() {
           </h2>
           <Separator />
           <div className="items-baseline grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-7 pt-4">
-            <Card text="HTML" src={"html.svg"} />
-            <Card text="Tailwind" src={"tailwindcss.svg"} />
-            <Card text="React Js" src={"react.svg"} />
-            <Card text="Javascript" src={"javascript.svg"} />
-            <Card text="React Native" src={"react-native.svg"} />
-            <Card text="MongoDb" src={"mongodb.svg"} />
-            <Card text="Nextjs" src={"next-js.svg"} />
-            <Card text="Css" src={"css-3.svg"} />
+            <Card text="HTML" src={"html.svg"} alt={"Html"} />
+            <Card text="Tailwind" src={"tailwindcss.svg"} alt={"Tailwind"} />
+            <Card text="React Js" src={"react.svg"} alt={"react Js"} />
+            <Card text="Javascript" src={"javascript.svg"} alt={"Javascript"} />
+            <Card
+              text="React Native"
+              src={"react-native.svg"}
+              alt={"React Native"}
+            />
+            <Card text="MongoDb" src={"mongodb.svg"} alt={"MongoDb"} />
+            <Card text="Next Js" src={"next-js.svg"} alt={"Next Js"} />
+            <Card text="Css" src={"css-3.svg"} alt={"Css"} />
           </div>
         </Section>
       </div>
