@@ -22,8 +22,8 @@
 
     }
     .container h1 {
-        font-size: 1rem;
-        padding: 10px 10px 10px;
+        font-size: 0.95rem;
+        padding: 8px 8px 8px;
         transition: font-size 2.5s ease-in-out;
         transition: padding 2.5s ease-in-out;
     }
