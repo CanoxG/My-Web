@@ -3,7 +3,7 @@ import styles from "./List.module.css";
 import Link from "next/link";
 
 const menuList = [
-  ["home", "HOME"],
+  ["", "HOME"],
   ["company", "COMPANY"],
   ["services", "SERVICES"],
   ["contact", "CONTACT"],

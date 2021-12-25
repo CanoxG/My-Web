@@ -46,16 +46,18 @@ export default function Home() {
           <Wrapper>
             <Card
               text="With the improvement of internet, large part of website traffic
-              became mobile-generated. This affected the web design industry, pushing it towards minimalistic,
-              lightened and simplistic style. In particular, the Mobile First approach emerged, which implies 
+              became mobile-generated. This affected the web design industry,
+              pushing it towards minimalistic, lightened and simplistic style.
+              In particular, the Mobile First approach emerged, which implies
               creating website design with mobile-oriented layout first,
               and then adapting it to higher screen dimensions."
               title="Web Design"
               src={"css-3.svg"}
             />
             <Card
-              text=" Put simply ‘Hosting’ is a service that makes your website viewable on the World Wide Web.
-              Without it, your website cannot be accessed by the people you want to attract."
+              text=" Put simply ‘Hosting’ is a service that makes your website
+              viewable on the World Wide Web. Without it, your website cannot be
+              accessed by the people you want to attract."
               title="Hosting"
               src={"network.png"}
             />
@@ -73,12 +75,11 @@ export default function Home() {
           {/* <-- Services --> */}
           <Wrapper>
             <Card
-              text="The tech of the back end is a combination of servers, applications, and databases.
-                      Responsibilities of backend programmers could involve writing APIs,
-                      writing code to interact with a database,
-                      creating libraries, working on business processes and data architecture,
-                      and much more.
-                      It often depends on the specific role and company."
+              text="The tech of the back end is a combination of servers, applications,
+              and databases. Responsibilities of backend programmers could involve writing APIs,
+              writing code to interact with a database,
+              creating libraries, working on business processes and data architecture,
+              and much more. It often depends on the specific role and company."
               title="Database"
               src={"mongodb.svg"}
             />
@@ -97,7 +98,10 @@ export default function Home() {
             Technologies We Work With
           </h2>
           <Separator />
-          <div className="items-baseline grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-16 pt-4">
+          <div
+            className="items-baseline grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8
+          gap-16 pt-4"
+          >
             <Card text="HTML" src={"html.svg"} alt={"Html"} />
             <Card text="Tailwind" src={"tailwindcss.svg"} alt={"Tailwind"} />
             <Card text="React Js" src={"react.svg"} alt={"react Js"} />
@@ -125,7 +129,6 @@ export default function Home() {
           alt={"maintenance"}
         />
       </Process>
-
     </Layout>
   );
 }

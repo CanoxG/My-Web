@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../button/Button";
+import Link from "next/link";
 
 const SOCIAL_LINKS = [
   ["facebook.svg", "facebook"],
@@ -22,7 +23,12 @@ export default function Social() {
       <ul className="flex mt-4 justify-center cursor-pointer">
         {Object.entries(SOCIAL_LINKS2).map(([key, val]) => (
           <li key={key} className="mx-4  sm:mx-3 bg-white rounded-full w-6">
-            <img src={`/images/${val}`} alt={key} />
+            <Link href={`/${val}`}>
+              <a>
+                {" "}
+                <img src={`/images/${val}`} alt={key} />{" "}
+              </a>
+            </Link>
           </li>
         ))}
         {/*OR*/}
