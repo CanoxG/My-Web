@@ -3,10 +3,10 @@ import styles from "./List.module.css";
 import Link from "next/link";
 
 const menuList = [
-  ["", "HOME"],
-  ["company", "COMPANY"],
-  ["services", "SERVICES"],
-  ["contact", "CONTACT"],
+  ['', "HOME", 'home'],
+  ['', "COMPANY", 'about'],
+  ['', "SERVICES", 'services'],
+  ["contact", "CONTACT",],
 ];
 
 export default function List() {
@@ -14,9 +14,9 @@ export default function List() {
     <section>
       <div className="flex grow sm:grow-0 justify-center p-3 text-sm text-white">
         <ul className={styles.mainMenu}>
-          {menuList.map(([item, key]) => (
+          {menuList.map(([item, key, id]) => (
             <li key={key} className="mx-4">
-              <Link href={`/${item}`}>
+              <Link href={`/${item}#${id}`}>
                 <a className={styles.listItem}>{key}</a>
               </Link>
             </li>
