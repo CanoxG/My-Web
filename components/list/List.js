@@ -6,7 +6,7 @@ const menuList = [
   ['', "HOME", 'home'],
   ['', "COMPANY", 'about'],
   ['', "SERVICES", 'services'],
-  ["contact", "CONTACT",],
+  ["", "CONTACT", 'contact'],
 ];
 
 export default function List() {

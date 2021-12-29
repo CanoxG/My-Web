@@ -16,7 +16,7 @@
     "heroku"
   ],
   "engines": {
-    "node": "16.x"
+    "node": "17.3.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",

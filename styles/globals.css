@@ -7,6 +7,8 @@ html, body {
     letter-spacing: 0.025rem;
     font-family: "Roboto Light";
     overflow-x: hidden;
+    transition: all 0.3s linear 0.3ms;
+    scroll-behavior: smooth;
 
 
 }

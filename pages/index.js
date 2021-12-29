@@ -6,6 +6,7 @@ import About from "../components/post/About";
 import Wrapper from "../components/wrapper/Wrapper";
 import Separator from "../components/separator/Separator";
 import Process from "../components/post/Process";
+import Contact from "./contact/contact";
 
 export default function Home() {
   return (
@@ -94,7 +95,7 @@ export default function Home() {
         </Section>
         <Section>
           {/* <-- Techs --> */}
-          <h2 className="text-lg sm:text-xl text-center font-black">
+          <h2 className="text-lg sm:text-xl text-center font-sans font-black">
             Technologies We Work With
           </h2>
           <Separator />
@@ -129,6 +130,7 @@ export default function Home() {
           alt={"maintenance"}
         />
       </Process>
+      <Contact/>
     </Layout>
   );
 }

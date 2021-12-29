@@ -8,14 +8,16 @@ export default function Process({ children }) {
       style={{ backgroundImage: 'url("/images/screen.jpeg")' }}
     >
       <Section>
-        <h2 className="pt-4 bg-white/70 text-center font-black text-lg sm:text-xl text-black">
-          Project Design & Development Process
-        </h2>
-        <div
-          className="grid grid-cols-3 gap-2 px-2 pt-4 bg-white/70 rounded items-end
+        <div className="bg-sky-300 opacity-80 ">
+          <h2 className="pt-4 text-center font-black font-sans text-lg sm:text-xl text-black">
+            Project Design & Development Process
+          </h2>
+          <div
+            className="grid grid-cols-3 gap-2 px-2 pt-4 rounded items-end
         sm:grid-cols-3 sm:gap-16 md:grid-cols-6 md:gap-1"
-        >
-          {children}
+          >
+            {children}
+          </div>
         </div>
       </Section>
     </div>
