@@ -6,7 +6,7 @@ import About from "../components/post/About";
 import Wrapper from "../components/wrapper/Wrapper";
 import Separator from "../components/separator/Separator";
 import Process from "../components/post/Process";
-import Contact from "./contact/contact";
+import Contact from "./contact/Contact";
 
 export default function Home() {
   return (

@@ -4,10 +4,10 @@ import styles from "./SideBar.module.css";
 import Social from "../list/Social";
 
 const sideMenu = [
-  ['', "HOME"],
+  ['', "HOME", ''],
   ['', "COMPANY", "about"],
-  ["service", "SERVICES"],
-  ["contact", "CONTACT"],
+  ["", "SERVICES", 'service'],
+  ["", "CONTACT", 'contact'],
 ];
 
 export function SideBar({ on }) {

@@ -1,8 +1,8 @@
 import React from "react";
 import Section from "../../components/section/Section";
 import { Input } from "../../components/Input/Input";
-import Textarea from "../../components/textarea/Textarea";
 import Separator from "../../components/separator/Separator";
+import SendBtn from "../../components/button/SendBtn";
 
 export default function Contact() {
   return (
@@ -25,8 +25,9 @@ export default function Contact() {
           </p>
         </div>
         <Input />
-        <Textarea />
-        <div className="flex justify-center">Button</div>
+        <div className="flex justify-center">
+          <SendBtn />
+        </div>
       </div>
     </Section>
   );
