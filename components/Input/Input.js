@@ -23,6 +23,7 @@ export function Input() {
           </label>
           <form onSubmit={formSubmitted}>
             <input
+              required
               value={state}
               onChange={handleName}
               className="w-full sm:w-60 bg-gray-100 rounded border border-gray-300
@@ -39,6 +40,7 @@ export function Input() {
             <input
               type={'text'}
               name={'name'}
+              required
               className="w-full sm:w-60 bg-gray-100 rounded border border-gray-300
             focus:border-indigo-500 text-base outline-none text-gray-700 py-1 leading-8
             transition-colors duration-200 ease-in-out"
