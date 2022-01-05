@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Header({ children }) {
   return (
-    <header>
+    <header className='mb-12'>
       <Image
         src={"/images/background.jpeg"}
         layout="responsive"
