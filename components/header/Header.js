@@ -14,9 +14,7 @@ export default function Header({ children }) {
         quality={100}
       />
       <div className="container mx-auto -mt-24 relative z-10">
-        <div className="flex sm:justify-end justify-center">
-          {children}
-        </div>
+        <div className="flex sm:justify-end justify-center">{children}</div>
       </div>
     </header>
   );
