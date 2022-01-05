@@ -1,31 +1,16 @@
 .container {
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
-    transition: color 2s ease-in-out;
-}
-
-.container h1 {
     border: 5px solid white;
     border-radius: 5px;
     background-color: #0c0c0b;
-    padding: 25px 25px 25px;
+    padding: 1.2rem;
     font-size: 1.3rem;
-    transition: font-size 2.5s ease-in-out;
-    transition: padding 2.5s ease-in-out;
+    color: white;
+    text-align: center;
 }
 
 @media only screen and (max-width: 760px) {
     .container {
-        justify-content: center;
-
-    }
-    .container h1 {
         font-size: 0.95rem;
-        padding: 8px 8px 8px;
-        transition: font-size 2.5s ease-in-out;
-        transition: padding 2.5s ease-in-out;
     }
 }
 

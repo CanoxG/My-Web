@@ -1,12 +1,23 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Header({ children }) {
   return (
-    <header
-      className="h-screen bg-cover bg-center bg-no-repeat text-white"
-      style={{ backgroundImage: 'url("/images/background.jpeg")' }}
-    >
-      {children}
+    <header>
+      <Image
+        src={"/images/background.jpeg"}
+        layout="responsive"
+        width="100%"
+        height="100%"
+        objectFit={"cover"}
+        objectPosition={"center"}
+        quality={100}
+      />
+      <div className="container mx-auto -mt-24 relative z-10">
+        <div className="flex sm:justify-end justify-center">
+          {children}
+        </div>
+      </div>
     </header>
   );
 }
