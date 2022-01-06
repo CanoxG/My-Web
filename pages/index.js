@@ -1,4 +1,3 @@
-import React from "react";
 import Layout from "../components/layout/Layout";
 import Section from "../components/section/Section";
 import Card from "../components/cards/Card";
@@ -9,6 +8,7 @@ import Process from "../components/post/Process";
 import Contact from "./contact/Contact";
 
 export default function Home() {
+
   return (
     <Layout>
       <div className=" md:px-0 px-6">
