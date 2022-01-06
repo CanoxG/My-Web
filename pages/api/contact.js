@@ -1,4 +1,8 @@
 let nodeMailer = require("nodemailer");
+require('dotenv').config()
+
+const PASSWORD = process.env.pasword
+const TO_EMAIl = 'bcanguven@gmail.com'
 
 export default function contact(req, res) {
     // Transporter stores the Info of Email Server and My Account
@@ -7,8 +11,8 @@ export default function contact(req, res) {
       host: 'smtp.gmail.com',
       secure: true,
       auth: {
-          user: 'bcanguven@gmail.com',
-          pass: 'password'
+          user: TO_EMAIl,
+          pass: PASSWORD
       }
   });
 

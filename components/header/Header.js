@@ -13,7 +13,7 @@ export default function Header({ children }) {
         placeholder={"blur"}
         blurDataURL={"/images/background.jpeg"}
         objectPosition={"center"}
-        quality={100}
+        quality={50}
       />
       <div className="container mx-auto -mt-24 relative z-10">
         <div className="flex sm:justify-end justify-center">{children}</div>
