@@ -10,8 +10,6 @@ export default function Header({ children }) {
         width="100%"
         height="100%"
         objectFit={"cover"}
-        placeholder={'blur'}
-        blurDataURL={'/images/background.jpeg'}
         objectPosition={"center"}
 
         quality={100}
