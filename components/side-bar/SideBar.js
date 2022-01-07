@@ -6,7 +6,7 @@ import Social from "../list/Social";
 const sideMenu = [
   ['', "HOME", ''],
   ['', "COMPANY", "about"],
-  ["", "SERVICES", 'service'],
+  ["", "SERVICES", 'services'],
   ["", "CONTACT", 'contact'],
 ];
 

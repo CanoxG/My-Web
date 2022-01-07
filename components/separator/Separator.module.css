@@ -1,15 +1,14 @@
 .line {
-    width: 100%;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .line span {
-    display: inline-block;
-    width: 100px;
-    height: 2px;
-    background-color: black;
-    opacity: .15;
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  background-color: black;
+  opacity: 0.15;
 }
-

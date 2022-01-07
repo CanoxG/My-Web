@@ -8,7 +8,6 @@ import Process from "../components/post/Process";
 import Contact from "./contact/Contact";
 
 export default function Home() {
-
   return (
     <Layout>
       <div className=" md:px-0 px-6">
@@ -17,6 +16,10 @@ export default function Home() {
         </Section>
         <Section>
           {/* <-- Services --> */}
+          <div id='services' className='flex justify-center'>
+            <h2 className='font-sans font-black text-xl '>SERVICES</h2>
+          </div>
+          <Separator />
           <Wrapper>
             <Card
               text="Build or scale your web  application. Our Front-end developers and
@@ -130,7 +133,7 @@ export default function Home() {
           alt={"maintenance"}
         />
       </Process>
-      <Contact/>
+      <Contact />
     </Layout>
   );
 }

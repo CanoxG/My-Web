@@ -1,6 +1,8 @@
 let nodeMailer = require("nodemailer");
+// Getting Password From .evn File
 require("dotenv").config();
 
+// Assign a Variable to Our Password & E-mail
 const PASSWORD = process.env.password;
 const TO_EMAIl = "bcanguven@gmail.com";
 const FROM_EMAIL = "guvenbcan@gmail.com";
@@ -17,6 +19,7 @@ export default async function contact(req, res) {
     },
   });
 
+  // We Create a Mail Model
   const mailData = {
     from: FROM_EMAIL,
     to: TO_EMAIl,
@@ -25,6 +28,8 @@ export default async function contact(req, res) {
     html: `<div>${req.body.message}</div><p>Sent from:
     ${req.body.email}</p>`,
   };
+  const date = new Date();
+  console.log("New mail", date);
   console.log(req.body);
 
   const result = await transporter.sendMail(mailData);
@@ -32,5 +37,5 @@ export default async function contact(req, res) {
   console.log({ result });
 
   res.status(200);
-  res.send('DONE');
+  res.send("DONE");
 }
