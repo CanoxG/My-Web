@@ -6,29 +6,33 @@ import SendBtn from "../../components/button/SendBtn";
 
 export default function Contact() {
   const [name, setName] = useState("");
-  console.log(name);
   const [email, setEmail] = useState("");
-  console.log(email);
   const [message, setMessage] = useState("");
-  console.log(message);
-  const [submit, setSubmit] = useState();
 
-  const handleName = useCallback((e) => {
-    setName(e.target.value);
-  }, []);
+  const handleName = useCallback(
+    (e) => {
+      setName(e.target.value);
+    },
+    [name]
+  );
 
-  const handleEmail = useCallback((e) => {
-    setEmail(e.target.value);
-  }, []);
+  const handleEmail = useCallback(
+    (e) => {
+      setEmail(e.target.value);
+    },
+    [email]
+  );
 
-  const handleMessage = useCallback((e) => {
-    setMessage(e.target.value);
-  }, []);
+  const handleMessage = useCallback(
+    (e) => {
+      setMessage(e.target.value);
+    },
+    [message]
+  );
 
   // We capture the Input State and dumps it out
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Sending");
 
     // Then Create a Data Model whit State
     const data = {
@@ -36,26 +40,26 @@ export default function Contact() {
       email,
       message,
     };
+    console.log("TRIGGER");
 
     // We need to Post it to our API folder with Fetch Request
-    fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-
+    try {
+      const response = await fetch("http://localhost:3000/api/contact", {
+        method: "POST",
+        headers: {
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
       // On the End of Fetch Call Response We clear the States of Inputs
-    }).then((res) => {
-      if (res.status === 200) {
-        console.log("Response Succeeded!");
-        setSubmit(true);
-        setName("");
-        setEmail("");
-        setMessage("");
-      }
-    });
+      console.log({ response });
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch (err) {
+      console.log({ err });
+    }
   };
 
   return (
@@ -78,9 +82,12 @@ export default function Contact() {
           onNameChange={handleName}
           onMessageChange={handleMessage}
           onEmailChange={handleEmail}
+          email={email}
+          fullName={name}
+          msg={message}
         />
       </div>
-      <SendBtn onSubmitted={handleSubmit}/>
+      <SendBtn onSubmitted={handleSubmit} />
     </Section>
   );
 }
