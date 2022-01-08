@@ -2,12 +2,12 @@ import React from "react";
 import Button from "../button/Button";
 import Link from "next/link";
 
-const SOCIAL_LINKS = [
-  ["facebook.svg", "facebook"],
-  ["linkedin.svg", "linkedin"],
-  ["google.svg", "google"],
-  ["mail.svg", "mail"],
-];
+// const SOCIAL_LINKS = [
+//   ["facebook.svg", "facebook", "https://www.facebook.com/B.CanGUVEN/"],
+//   ["linkedin.svg", "linkedin"],
+//   ["google.svg", "google"],
+//   ["mail.svg", "mail"],
+// ];
 
 const SOCIAL_LINKS2 = {
   facebook: "facebook.svg",
@@ -32,9 +32,13 @@ export default function Social() {
           </li>
         ))}
         {/*OR*/}
-        {/*{SOCIAL_LINKS.map(([val, key]) => (*/}
+        {/*{SOCIAL_LINKS.map(([val, key, path]) => (*/}
         {/*  <li key={key} className="mx-1 bg-white rounded-full w-6">*/}
-        {/*    <img src={`/images/${val}`} alt={key} />*/}
+        {/*    <Link href={`/${path}`}>*/}
+        {/*      <a>*/}
+        {/*        <img src={`/images/${val}`} alt={key} />*/}
+        {/*      </a>*/}
+        {/*    </Link>*/}
         {/*  </li>*/}
         {/*))}*/}
       </ul>

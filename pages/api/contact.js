@@ -8,10 +8,10 @@ const TO_EMAIl = "bcanguven@gmail.com";
 const FROM_EMAIL = "guvenbcan@gmail.com";
 
 export default async function contact(req, res) {
-  // Transporter Stores the Info of Email Server and My Account
   const transporter = nodeMailer.createTransport({
-    port: 465,
+    // Transporter Stores the Info of SMTP Server and Sender Account
     host: "smtp.gmail.com",
+    port: 465,
     secure: true,
     auth: {
       user: FROM_EMAIL,
@@ -28,10 +28,12 @@ export default async function contact(req, res) {
     html: `<div>${req.body.message}</div><p>Sent from:
     ${req.body.email}</p>`,
   };
+
   const date = new Date();
   console.log("New mail", date);
   console.log(req.body);
 
+  // Send Mail with Defined Transport Object
   const result = await transporter.sendMail(mailData);
 
   console.log({ result });
