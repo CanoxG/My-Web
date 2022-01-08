@@ -9,8 +9,8 @@ export default function Process({ children }) {
     >
       <Section>
         <div className="bg-slate-300 opacity-80 ">
-          <h2 className="pt-4 text-center font-black font-sans text-lg sm:text-xl text-black">
-            Project Design & Development Process
+          <h2 className="pt-4 text-center font-black font-sans text-lx text-black">
+            PROJECT DESIGN & DEVELOPMENT PROCESS
           </h2>
           <div
             className="grid grid-cols-3 gap-2 px-2 pt-4 rounded items-end

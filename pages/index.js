@@ -98,8 +98,8 @@ export default function Home() {
         </Section>
         <Section>
           {/* <-- Techs --> */}
-          <h2 className="text-lg sm:text-xl text-center font-sans font-black">
-            Technologies We Work With
+          <h2 className="text-xl text-center font-sans font-black">
+            TECHNOLOGIES WE WORK WITH
           </h2>
           <Separator />
           <div
