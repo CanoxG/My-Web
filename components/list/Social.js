@@ -34,7 +34,7 @@ export default function Social() {
         {/*OR*/}
         {SOCIAL_LINKS.map(([val, key, path]) => (
           <li key={key} className="mx-1 bg-white rounded-full w-6">
-            <Link href={`/${path}`}>
+            <Link href={'path'}>
               <a>
                 <img src={`/images/${val}`} alt={key} />
               </a>
