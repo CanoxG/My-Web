@@ -7,8 +7,8 @@ export default function Header({ children }) {
       <Image
         src={"/images/background.jpeg"}
         layout="responsive"
-        width="100%"
-        height="75%"
+        width="80%"
+        height="80%"
         objectFit={"cover"}
         placeholder={"blur"}
         blurDataURL={"/images/background.jpeg"}

@@ -44,14 +44,17 @@ export default function Contact() {
 
     // We need to Post it to our API folder with Fetch Request
     try {
-      const response = await fetch("https://lorien-app.herokuapp.com/#contact", {
-        method: "POST",
-        headers: {
-          Accept: "application/json, text/plain, */*",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+      const response = await fetch(
+        "https://lorien-app.herokuapp.com/#contact",
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json, text/plain, */*",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
       // On the End of Fetch Call Response We clear the States of Inputs
       console.log({ response });
       setName("");
@@ -64,7 +67,7 @@ export default function Contact() {
 
   return (
     <Section>
-      <div id={"contact"} className="px-6 pt-20 ">
+      <div id={"contact"} className="px-6 pt-20">
         <div className="flex justify-center">
           <h2 className="sm:text-3xl text-xl font-sans max-auto font-black title-font mb-4">
             CONTACT US

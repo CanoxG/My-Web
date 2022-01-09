@@ -8,7 +8,7 @@ export default function Process({ children }) {
       style={{ backgroundImage: 'url("/images/screen.jpeg")' }}
     >
       <Section>
-        <div className="bg-slate-300 opacity-80 ">
+        <div className="bg-amber-50 opacity-80 ">
           <h2 className="pt-4 text-center font-black font-sans text-lx text-black">
             PROJECT DESIGN & DEVELOPMENT PROCESS
           </h2>
