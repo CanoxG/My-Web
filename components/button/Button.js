@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Button() {
   return (
-    <Link href={"/#logo"}>
+    <Link href={"/#home"}>
       <a>
         <button>
           <div className={`animate-bounce ${styles.btn}`}>⌃</div>
