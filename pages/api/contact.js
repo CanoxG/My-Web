@@ -1,5 +1,5 @@
 import nodeMailer from 'nodemailer';
-// require('dotenv').config()
+require('dotenv').config()
 
 export default async function contact(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
