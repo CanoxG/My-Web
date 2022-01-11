@@ -45,7 +45,7 @@ export default function Contact() {
     // We need to Post it to our API folder with Fetch Request
     try {
       const response = await fetch(
-        "https://lorien-app.herokuapp.com",
+        "https://localhost:3000/api/contact",
         {
           method: "POST",
           headers: {
