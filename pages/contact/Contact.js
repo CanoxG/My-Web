@@ -45,7 +45,7 @@ export default function Contact() {
     // We need to Post it to our API folder with Fetch Request
     try {
       const response = await fetch(
-        `${process.env.DOMAIN}/api/contact`,
+        `/api/contact`,
         {
           method: "POST",
           headers: {

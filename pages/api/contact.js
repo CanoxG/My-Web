@@ -1,6 +1,7 @@
 import nodeMailer from 'nodemailer';
 import Cors from 'cors'
 import initMiddleware from '../../lib/init-middleware'
+import log from "tailwindcss/lib/util/log";
 
 // Initialize the cors middleware
 const cors = initMiddleware(
@@ -19,7 +20,7 @@ const FROM_EMAIL = process.env.FROM_EMAIL;
 export default async function contact(req, res) {
   // Run cors
   await cors(req, res);
-
+  console.log({ PASSWORD, TO_EMAIl, FROM_EMAIL })
   if (req.method === 'POST') {
     const transporter = nodeMailer.createTransport({
       // Transporter Stores the Info of SMTP Server and Sender Account
