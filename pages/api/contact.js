@@ -20,22 +20,12 @@ const TO_EMAIl = process.env.TO_EMAIL;
 const FROM_EMAIL = process.env.FROM_EMAIL;
 
 export default async function contact(req, res) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested, Content-Type, Accept Authorization"
-  );
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "*");
+  res.setHeader("Access-Control-Allow-Headers", "*");
   // Run cors
   await cors(req, res);
   console.log({ PASSWORD, TO_EMAIl, FROM_EMAIL })
-
-  if (req.method === "OPTIONS") {
-    res.header(
-      "Access-Control-Allow-Methods",
-      "GET,HEAD,PUT,PATCH,POST,DELETE"
-    )
-    return res.status(200)
-  }
 
   if (req.method === 'POST') {
     const transporter = nodeMailer.createTransport({
