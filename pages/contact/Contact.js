@@ -45,7 +45,7 @@ export default function Contact() {
     // We need to Post it to our API folder with Fetch Request
     try {
       const response = await fetch(
-        "https://lorien-app.herokuapp.com/#contact",
+        "https://lorien-app.herokuapp.com",
         {
           method: "POST",
           headers: {
@@ -76,7 +76,7 @@ export default function Contact() {
         <Separator />
         <div className="flex justify-center">
           <p className="lg:w-2/3 text-center text-sm sm:text-lg leading-6 sm:leading-relaxed font-light text-gray-500 text-base">
-            Do not hesitate to get in touch with us
+            {'Don\'t  hesitate to get in touch with us'}
             <br />
             We would love to discuss on your project
           </p>
