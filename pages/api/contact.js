@@ -15,9 +15,9 @@ import nodeMailer from 'nodemailer';
 // )
 
 // Assign a Variable to Our Password & E-mail
-const PASSWORD = process.env.PASSWORD || 'TanoxCanox1903';
-const TO_EMAIl = process.env.TO_EMAIL || 'bcanguven@gmail.com';
-const FROM_EMAIL = process.env.FROM_EMAIL || 'guvenbcan@gmail.com';
+const PASSWORD = process.env.PASSWORD 
+const TO_EMAIl = process.env.TO_EMAIL
+const FROM_EMAIL = process.env.FROM_EMAIL
 
 export default async function contact(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -32,6 +32,7 @@ export default async function contact(req, res) {
       // Transporter Stores the Info of SMTP Server and Sender Account
       host: "smtp.gmail.com",
       secure: true,
+      // port: 465,
       auth: {
         user: FROM_EMAIL,
         pass: PASSWORD,
