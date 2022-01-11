@@ -1,11 +1,10 @@
 import nodeMailer from 'nodemailer';
-require('dotenv').config()
+// require('dotenv').config()
 
 export default async function contact(req, res) {
-  // res.setHeader("Access-Control-Allow-Origin", "*");
-  // res.setHeader("Access-Control-Allow-Methods", "*");
-  // res.setHeader("Access-Control-Allow-Headers", "*");
-  console.log({ PASSWORD, TO_EMAIl, FROM_EMAIL })
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "*");
+  res.setHeader("Access-Control-Allow-Headers", "*");
 
   if (req.method === 'POST') {
     const transporter = nodeMailer.createTransport({
