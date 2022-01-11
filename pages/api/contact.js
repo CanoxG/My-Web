@@ -1,18 +1,18 @@
 import nodeMailer from 'nodemailer';
-import Cors from 'cors'
-import initMiddleware from '../../lib/init-middleware'
-
-// Initialize the cors middleware
-const cors = initMiddleware(
-  // You can read more about the available options here: https://github.com/expressjs/cors#configuration-options
-  Cors({
-    "origin": "*",
-    "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
-    "preflightContinue": false,
-    "optionsSuccessStatus": 204
-    // methods: ['GET', 'POST', 'OPTIONS'],
-  })
-)
+// import Cors from 'cors'
+// import initMiddleware from '../../lib/init-middleware'
+//
+// // Initialize the cors middleware
+// const cors = initMiddleware(
+//   // You can read more about the available options here: https://github.com/expressjs/cors#configuration-options
+//   Cors({
+//     "origin": "*",
+//     "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+//     "preflightContinue": false,
+//     "optionsSuccessStatus": 204
+//     // methods: ['GET', 'POST', 'OPTIONS'],
+//   })
+// )
 
 // Assign a Variable to Our Password & E-mail
 const PASSWORD = process.env.password;
@@ -24,7 +24,7 @@ export default async function contact(req, res) {
   res.setHeader("Access-Control-Allow-Methods", "*");
   res.setHeader("Access-Control-Allow-Headers", "*");
   // Run cors
-  await cors(req, res);
+  // await cors(req, res);
   console.log({ PASSWORD, TO_EMAIl, FROM_EMAIL })
 
   if (req.method === 'POST') {
