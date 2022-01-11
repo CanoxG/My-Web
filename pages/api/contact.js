@@ -1,13 +1,25 @@
-let nodeMailer = require("nodemailer");
-// Getting Password From .evn File
-require("dotenv").config();
+import nodeMailer from 'nodemailer';
+import Cors from 'cors'
+import initMiddleware from '../../lib/init-middleware'
+
+// Initialize the cors middleware
+const cors = initMiddleware(
+  // You can read more about the available options here: https://github.com/expressjs/cors#configuration-options
+  Cors({
+    // Only allow requests with GET, POST and OPTIONS
+    methods: ['GET', 'POST', 'OPTIONS'],
+  })
+)
 
 // Assign a Variable to Our Password & E-mail
 const PASSWORD = process.env.password;
-const TO_EMAIl = "bcanguven@gmail.com";
-const FROM_EMAIL = "guvenbcan@gmail.com";
+const TO_EMAIl = process.env.TO_EMAIL;
+const FROM_EMAIL = process.env.FROM_EMAIL;
 
 export default async function contact(req, res) {
+  // Run cors
+  await cors(req, res);
+
   if (req.method === 'POST') {
     const transporter = nodeMailer.createTransport({
       // Transporter Stores the Info of SMTP Server and Sender Account
