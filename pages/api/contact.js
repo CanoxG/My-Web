@@ -1,11 +1,6 @@
 import nodeMailer from 'nodemailer';
 require('dotenv').config()
 
-// Assign a Variable to Our Password & E-mail
-const PASSWORD = process.env.PASSWORD
-const TO_EMAIl = process.env.TO_EMAIL
-const FROM_EMAIL = process.env.FROM_EMAIL
-
 export default async function contact(req, res) {
   // res.setHeader("Access-Control-Allow-Origin", "*");
   // res.setHeader("Access-Control-Allow-Methods", "*");
@@ -18,15 +13,16 @@ export default async function contact(req, res) {
       host: "smtp.gmail.com",
       secure: true,
       auth: {
-        user: FROM_EMAIL,
-        pass: PASSWORD,
+        user: process.env.FROM_EMAIL,
+        pass: process.env.PASSWORD
       },
     });
 
     // We Create a Mail Model
+    // Environment Variable to Our Password & E-mail
     const mailData = {
-      from: FROM_EMAIL,
-      to: TO_EMAIl,
+      from: process.env.FROM_EMAIL,
+      to:  process.env.TO_EMAIL,
       subject: `Message From ${req.body.name}`,
       text: req.body.message + " | Sent from: " + req.body.email,
       html: `<div>${req.body.message}</div><p>Sent from:
