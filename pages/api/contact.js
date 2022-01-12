@@ -1,16 +1,13 @@
 import nodeMailer from "nodemailer";
 
 
-
 // Assign a Variable to Our Password & E-mail
 const PASSWORD = process.env.PASSWORD
 const TO_EMAIL = process.env.TO_EMAIL
 const FROM_EMAIL = process.env.FROM_EMAIL
 
 export default async function contact(req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "*");
-  res.setHeader("Access-Control-Allow-Headers", "*");
+
   console.log({ PASSWORD, TO_EMAIL, FROM_EMAIL })
 
 
