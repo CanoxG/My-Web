@@ -1,25 +1,31 @@
 import nodeMailer from "nodemailer";
 
 
+
 // Assign a Variable to Our Password & E-mail
+const PASSWORD = process.env.PASSWORD
+const TO_EMAIL = process.env.TO_EMAIL
+const FROM_EMAIL = process.env.FROM_EMAIL
 
 export default async function contact(req, res) {
+  console.log({ PASSWORD, TO_EMAIL, FROM_EMAIL })
 
+  
   if (req.method === "POST") {
     const transporter = nodeMailer.createTransport({
       // Transporter Stores the Info of SMTP Server and Sender Account
       host: "smtp.gmail.com",
       secure: true,
       auth: {
-        user: process.env.FROM_EMAIL,
-        pass: process.env.PASSWORD,
+        user: FROM_EMAIL,
+        pass: PASSWORD,
       },
     });
 
     // We Create a Mail Model
     const mailData = {
-      from: process.env.FROM_EMAIL,
-      to: process.env.TO_EMAIL,
+      from: FROM_EMAIL,
+      to: TO_EMAIL,
       subject: `Message From ${req.body.name}`,
       text: req.body.message + " | Sent from: " + req.body.email,
       html: `<div>${req.body.message}</div><p>Sent from:
