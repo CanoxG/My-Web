@@ -69,7 +69,7 @@ export default function Contact() {
     <Section>
       <div id={"contact"} className="px-6 pt-20">
         <div className="flex justify-center">
-          <h2 className="sm:text-3xl text-xl font-sans max-auto font-black title-font mb-4">
+          <h2 className="sm:text-3xl text-2xl font-sans max-auto font-black title-font mb-4">
             CONTACT US
           </h2>
         </div>
