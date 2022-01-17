@@ -18,7 +18,7 @@ const SOCIAL_LINKS2 = {
 
 export default function Social() {
   return (
-    <div className="flex-col text-center text-white ">
+    <div className="flex-col text-center text-white whitespace-nowrap">
       <Button />
       <ul className="flex mt-4 justify-center cursor-pointer">
         {Object.entries(SOCIAL_LINKS2).map(([key, val]) => (
