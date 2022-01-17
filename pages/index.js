@@ -1,23 +1,24 @@
 import Layout from "../components/layout/Layout";
-import Section from "../components/section/Section";
+import Container from "../components/container/Container";
 import Card from "../components/cards/Card";
-import About from "../components/post/About";
+import About from "../components/context/About";
 import Wrapper from "../components/wrapper/Wrapper";
 import Separator from "../components/separator/Separator";
-import Process from "../components/post/Process";
+import Process from "../components/context/Process";
 import Contact from "./contact/Contact";
+import H2 from "/components/head_line/H2";
 
 export default function Home() {
   return (
     <Layout>
       <div className=" md:px-0 px-6">
-        <Section>
+        <Container>
           <About />
-        </Section>
-        <Section>
+        </Container>
+        <Container>
           {/* <-- Services --> */}
-          <div id='services' className='flex justify-center'>
-            <h2 className='font-sans font-black text-xl '>SERVICES</h2>
+          <div id="services" className="flex justify-center">
+            <H2 className="font-sans font-black text-xl ">SERVICES</H2>
           </div>
           <Separator />
           <Wrapper>
@@ -26,14 +27,14 @@ export default function Home() {
             UX/UI designers deliver within short time frames, to guarantee a fast go to
             market strategy."
               title="Web Development"
-              src={"next-js.svg"}
+              src={"svg/next-js.svg"}
             />
             <Card
               text=" Advantage of the rapidly growing segment of mobile application development.
               Mobile apps can help increase engagement and foster customer loyalty
               and brand recognition."
               title="Mobile Development"
-              src={"react-native.svg"}
+              src={"svg/react-native.svg"}
             />
             <Card
               text="It’s not just about building the site for us. We are all about building strong,
@@ -41,11 +42,11 @@ export default function Home() {
               We’ll do things like update all plugins and software to make sure your site is
               always operating at it’s best along."
               title="Maintenance"
-              src={"maintenance.png"}
+              src={"images/maintenance.png"}
             />
           </Wrapper>
-        </Section>
-        <Section>
+        </Container>
+        <Container>
           {/* <-- Services --> */}
           <Wrapper>
             <Card
@@ -56,14 +57,14 @@ export default function Home() {
               creating website design with mobile-oriented layout first,
               and then adapting it to higher screen dimensions."
               title="Web Design"
-              src={"css-3.svg"}
+              src={"svg/css-3.svg"}
             />
             <Card
               text=" Put simply ‘Hosting’ is a service that makes your website
               viewable on the World Wide Web. Without it, your website cannot be
               accessed by the people you want to attract."
               title="Hosting"
-              src={"network.png"}
+              src={"images/network.png"}
             />
             <Card
               text="Search Engine Optimization. In simple terms, it means the process
@@ -71,11 +72,11 @@ export default function Home() {
               or services related to your business in Google. The better visibility your pages
               have in search results "
               title="Seo Optimization"
-              src={"seo.png"}
+              src={"images/seo.png"}
             />
           </Wrapper>
-        </Section>
-        <Section>
+        </Container>
+        <Container>
           {/* <-- Services --> */}
           <Wrapper>
             <Card
@@ -85,51 +86,59 @@ export default function Home() {
               creating libraries, working on business processes and data architecture,
               and much more. It often depends on the specific role and company."
               title="Database"
-              src={"mongodb.svg"}
+              src={"svg/mongodb.svg"}
             />
             <div className="sm:col-start-3">
               <Card
                 title="Google Analytics"
                 text="We can integrate your web application with Google to track your websites performance."
-                src={"google-analytics.svg"}
+                src={"svg/google-analytics.svg"}
               />
             </div>
           </Wrapper>
-        </Section>
-        <Section>
+        </Container>
+        <Container>
           {/* <-- Techs --> */}
-          <h2 className="text-xl text-center font-sans font-black">
-            TECHNOLOGIES WE WORK WITH
-          </h2>
+          <div className="flex justify-center">
+            <H2>TECHNOLOGIES WE WORK WITH</H2>
+          </div>
           <Separator />
           <div
             className="items-baseline grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8
           gap-16 pt-4"
           >
-            <Card text="HTML" src={"html.svg"} alt={"Html"} />
-            <Card text="Tailwind" src={"tailwindcss.svg"} alt={"Tailwind"} />
-            <Card text="React Js" src={"react.svg"} alt={"react Js"} />
-            <Card text="Javascript" src={"javascript.svg"} alt={"Javascript"} />
+            <Card text="HTML" src={"svg/html.svg"} alt={"Html"} />
+            <Card
+              text="Tailwind"
+              src={"svg/tailwindcss.svg"}
+              alt={"Tailwind"}
+            />
+            <Card text="React Js" src={"svg/react.svg"} alt={"react Js"} />
+            <Card
+              text="Javascript"
+              src={"svg/javascript.svg"}
+              alt={"Javascript"}
+            />
             <Card
               text="React Native"
-              src={"react-native.svg"}
+              src={"svg/react-native.svg"}
               alt={"React Native"}
             />
-            <Card text="MongoDb" src={"mongodb.svg"} alt={"MongoDb"} />
-            <Card text="Next Js" src={"next-js.svg"} alt={"Next Js"} />
-            <Card text="Css" src={"css-3.svg"} alt={"Css"} />
+            <Card text="MongoDb" src={"svg/mongodb.svg"} alt={"MongoDb"} />
+            <Card text="Next Js" src={"svg/next-js.svg"} alt={"Next Js"} />
+            <Card text="Css" src={"svg/css-3.svg"} alt={"Css"} />
           </div>
-        </Section>
+        </Container>
       </div>
       <Process>
-        <Card title={"Coffee Meeting"} src={"coffee.svg"} alt={"coffee"} />
-        <Card title={"Research"} src={"search.svg"} alt={"search"} />
-        <Card title={"Design"} src={"design.svg"} alt={"design"} />
-        <Card title={"Development"} src={"dev.svg"} alt={"dev"} />
-        <Card title={"Delivery"} src={"delivery.svg"} alt={"delivery"} />
+        <Card title={"Coffee Meeting"} src={"svg/coffee.svg"} alt={"coffee"} />
+        <Card title={"Research"} src={"svg/search.svg"} alt={"search"} />
+        <Card title={"Design"} src={"svg/design.svg"} alt={"design"} />
+        <Card title={"Development"} src={"svg/dev.svg"} alt={"dev"} />
+        <Card title={"Delivery"} src={"svg/delivery.svg"} alt={"delivery"} />
         <Card
           title={"Maintenance"}
-          src={"maintenance.svg"}
+          src={"svg/maintenance.svg"}
           alt={"maintenance"}
         />
       </Process>

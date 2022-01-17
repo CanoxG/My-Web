@@ -10,10 +10,10 @@ import Link from "next/link";
 // ];
 
 const SOCIAL_LINKS2 = {
-  facebook: "facebook.svg",
-  linkedin: "linkedin.svg",
-  google: "google.svg",
-  mail: "mail.svg",
+  facebook: "svg/facebook.svg",
+  linkedin: "svg/linkedin.svg",
+  google: "svg/google.svg",
+  mail: "svg/mail.svg",
 };
 
 export default function Social() {
@@ -26,7 +26,7 @@ export default function Social() {
             <Link href={`/${val}`}>
               <a>
                 {" "}
-                <img src={`/images/${val}`} alt={key} />{" "}
+                <img src={`/${val}`} alt={key} />{" "}
               </a>
             </Link>
           </li>
@@ -36,7 +36,7 @@ export default function Social() {
         {/*  <li key={key} className="mx-1 bg-white rounded-full w-6">*/}
         {/*    <Link href={'/path'}>*/}
         {/*      <a>*/}
-        {/*        <img src={`/images/${val}`} alt={key} />*/}
+        {/*        <jpeg src={`/images/${val}`} alt={key} />*/}
         {/*      </a>*/}
         {/*    </Link>*/}
         {/*  </li>*/}

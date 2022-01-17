@@ -1,5 +1,5 @@
 import React from "react";
-import List from "../list/List";
+import NavList from "../list/NavList";
 import Hamburger from "../button/Hamburger";
 
 export default function Nav() {
@@ -9,7 +9,7 @@ export default function Nav() {
       <div className="flex-auto sm:grow p-4">
         <img src={"/images/logo.png"} className="cursor-pointer w-14 sm:w-20 lg:w-26" />
       </div>
-      <List />
+      <NavList />
       <Hamburger open={false}/>
     </nav>
   );

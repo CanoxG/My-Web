@@ -1,10 +1,9 @@
 import React from "react";
 import Head from "next/head";
 import Header from "../header/Header";
-import { SideBar } from "../side-bar/SideBar";
 import Nav from "../nav/Nav";
 import Footer from "../footer/Footer";
-import HeadLine from "../header/HeadLine";
+import Phrase from "../header/Phrase";
 
 export default function Layout({ children }) {
   return (
@@ -26,9 +25,8 @@ export default function Layout({ children }) {
       </Head>
       <Nav />
       <Header>
-        <HeadLine />
+        <Phrase />
       </Header>
-      <SideBar />
       <main>{children}</main>
       <Footer />
     </>

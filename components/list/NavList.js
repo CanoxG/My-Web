@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./List.module.css";
+import styles from "./NavList.module.css";
 import Link from "next/link";
 
 const menuList = [
@@ -9,7 +9,7 @@ const menuList = [
   ["", "CONTACT", 'contact'],
 ];
 
-export default function List() {
+export default function NavList() {
   return (
     <section>
       <div className="flex grow sm:grow-0 justify-center p-3 text-sm text-white">

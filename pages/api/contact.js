@@ -7,7 +7,7 @@ const TO_EMAIL = process.env.TO_EMAIL
 const FROM_EMAIL = process.env.FROM_EMAIL
 
 export default async function contact(req, res) {
-// Checking Heroku Log to See the EVN files
+  // Checking Heroku Log to See the EVN files
   console.log({ PASSWORD, TO_EMAIL, FROM_EMAIL })
 
 

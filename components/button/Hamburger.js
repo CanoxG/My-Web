@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Hamburger.module.css";
 import { SideBar } from "../side-bar/SideBar";
 
+
 export default function Hamburger({ open }) {
   const [state, setState] = React.useState(open);
 

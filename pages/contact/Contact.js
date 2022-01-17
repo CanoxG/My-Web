@@ -1,8 +1,9 @@
 import React, { useCallback, useState } from "react";
-import Section from "../../components/section/Section";
+import Container from "../../components/container/Container";
 import { Input } from "../../components/Input/Input";
 import Separator from "../../components/separator/Separator";
 import SendBtn from "../../components/button/SendBtn";
+import H2 from '/components/head_line/H2'
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -49,7 +50,7 @@ export default function Contact() {
         {
           method: "POST",
           headers: {
-            Accept: "application/json, text/plain, */*",
+            Accept: "application/json, paragraph/plain, */*",
             "Content-Type": "application/json",
           },
           body: JSON.stringify(data),
@@ -66,12 +67,12 @@ export default function Contact() {
   };
 
   return (
-    <Section>
+    <Container>
       <div id={"contact"} className="px-6 pt-20">
         <div className="flex justify-center">
-          <h2 className="sm:text-3xl text-2xl font-sans max-auto font-black title-font mb-4">
+          <H2>
             CONTACT US
-          </h2>
+          </H2>
         </div>
         <Separator />
         <div className="flex justify-center">
@@ -91,6 +92,6 @@ export default function Contact() {
         />
       </div>
       <SendBtn onSubmitted={handleSubmit} />
-    </Section>
+    </Container>
   );
 }
