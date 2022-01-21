@@ -19,7 +19,7 @@ export function Input({
             value={fullName}
             type={"text"}
             placeholder={'Full Name'}
-            className="w-full md:w-4/5  lg:w-3/5 bg-gray-100 rounded border border-gray-300
+            className="w-full p-3 md:w-4/5  lg:w-3/5 bg-gray-100 rounded border border-gray-300
             focus:border-indigo-500 text-base outline-none text-gray-700 py-1 leading-8
             transition-colors duration-200 ease-in-out"
           />
@@ -34,7 +34,7 @@ export function Input({
             value={email}
             type={"email"}
             placeholder={'E-mail'}
-            className="w-full md:w-4/5 lg:w-3/5 bg-gray-100 rounded border border-gray-300
+            className="w-full p-3 md:w-4/5 lg:w-3/5 bg-gray-100 rounded border border-gray-300
             focus:border-indigo-500 text-base outline-none text-gray-700 py-1 leading-8
             transition-colors duration-200 ease-in-out"
           />

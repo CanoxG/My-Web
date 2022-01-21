@@ -9,7 +9,7 @@ export default function Process({ children }) {
       style={{ backgroundImage: 'url("/images/screen.png")' }}
     >
       <Container>
-        <div className="bg-amber-50 opacity-80 ">
+        <div className="bg-sky-50 opacity-80 ">
           <div className='flex justify-center'>
           <H3>
             PROJECT DESIGN & DEVELOPMENT PROCESS
