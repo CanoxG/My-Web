@@ -28,6 +28,7 @@ export default function Home() {
             market strategy."
               title="Web Development"
               src={"svg/next-js.svg"}
+              alt={'Web Development'}
             />
             <Card
               text=" Advantage of the rapidly growing segment of mobile application development.
@@ -35,6 +36,7 @@ export default function Home() {
               and brand recognition."
               title="Mobile Development"
               src={"svg/react-native.svg"}
+              alt={'Mobile Development'}
             />
             <Card
               text="It’s not just about building the site for us. We are all about building strong,
@@ -43,6 +45,7 @@ export default function Home() {
               always operating at it’s best along."
               title="Maintenance"
               src={"images/maintenance.png"}
+              alt={'Maintenance'}
             />
           </Wrapper>
         </Container>
@@ -57,6 +60,7 @@ export default function Home() {
               creating website design with mobile-oriented layout first,
               and then adapting it to higher screen dimensions."
               title="Web Design"
+              alt={'Web Design'}
               src={"svg/css-3.svg"}
             />
             <Card
@@ -64,6 +68,7 @@ export default function Home() {
               viewable on the World Wide Web. Without it, your website cannot be
               accessed by the people you want to attract."
               title="Hosting"
+              alt={'Hosting'}
               src={"images/network.png"}
             />
             <Card
@@ -72,6 +77,7 @@ export default function Home() {
               or services related to your business in Google. The better visibility your pages
               have in search results "
               title="Seo Optimization"
+              alt={'Seo Optimization'}
               src={"images/seo.png"}
             />
           </Wrapper>
@@ -86,6 +92,7 @@ export default function Home() {
               creating libraries, working on business processes and data architecture,
               and much more. It often depends on the specific role and company."
               title="Database"
+              alt={'Database'}
               src={"svg/mongodb.svg"}
             />
             <div className="sm:col-start-3">
@@ -93,6 +100,7 @@ export default function Home() {
                 title="Google Analytics"
                 text="We can integrate your web application with Google to track your websites performance."
                 src={"svg/google-analytics.svg"}
+                alt={'Google Analytics'}
               />
             </div>
           </Wrapper>
