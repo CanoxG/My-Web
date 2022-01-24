@@ -5,7 +5,10 @@ import Separator from "../separator/Separator";
 export default function About() {
   return (
     <div id={"about"} className="text-center text-sm sm:text-lg">
-      <h1 className="font-sans font-black text-xl sm:text-3xl pt-14">
+      <h1
+        className="flex items-center justify-center font-sans pt-20 font-black
+        text-xl sm:text-3xl "
+      >
         WE ARE LORIEN AGENCY
       </h1>
       <Separator />

@@ -5,7 +5,7 @@ import Nav from "../nav/Nav";
 import Footer from "../footer/Footer";
 import Phrase from "../header/Phrase";
 
-export default function Layout({ children }) {
+export default function BaseLayout({ children }) {
   return (
     <>
       <Head>

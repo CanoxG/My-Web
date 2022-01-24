@@ -5,11 +5,11 @@ import H3 from '/components/head_line/H3'
 export default function Process({ children }) {
   return (
     <div
-      className="brightness-75 h-96 bg-cover bg-center bg-no-repeat text-white"
+      className="brightness-75 h-[26rem] bg-cover bg-center bg-no-repeat text-white"
       style={{ backgroundImage: 'url("/images/screen.png")' }}
     >
       <Container>
-        <div className="bg-sky-50 opacity-80 ">
+        <div className="bg-sky-50 opacity-80">
           <div className='flex justify-center'>
           <H3>
             PROJECT DESIGN & DEVELOPMENT PROCESS

@@ -1,4 +1,4 @@
-import Layout from "../components/layout/Layout";
+import BaseLayout from "../components/layout/BaseLayout";
 import Container from "../components/container/Container";
 import Card from "../components/cards/Card";
 import About from "../components/context/About";
@@ -10,14 +10,14 @@ import H2 from "/components/head_line/H2";
 
 export default function Home() {
   return (
-    <Layout>
+    <BaseLayout>
       <div className=" md:px-0 px-6">
         <Container>
           <About />
         </Container>
         <Container>
           {/* <-- Services --> */}
-          <div id="services" className="flex justify-center">
+          <div id="services" className="flex justify-center pt-20">
             <H2 className="font-sans font-black text-xl ">SERVICES</H2>
           </div>
           <Separator />
@@ -151,6 +151,6 @@ export default function Home() {
         />
       </Process>
       <Contact />
-    </Layout>
+    </BaseLayout>
   );
 }
