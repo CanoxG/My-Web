@@ -5,7 +5,7 @@ import H3 from '/components/head_line/H3'
 export default function Process({ children }) {
   return (
     <div
-      className="brightness-75 h-[26rem] bg-cover bg-center bg-no-repeat text-white"
+      className="brightness-75 h-[28rem] bg-cover bg-center bg-no-repeat text-white"
       style={{ backgroundImage: 'url("/images/screen.png")' }}
     >
       <Container>
