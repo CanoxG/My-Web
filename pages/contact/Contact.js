@@ -56,7 +56,7 @@ export default function Contact() {
           body: JSON.stringify(data),
         }
       );
-      // On the End of Fetch Call Response We clear the States of Inputs
+      // End of Fetch Call Response We clear the States of Inputs
       console.log({ response });
       setName("");
       setEmail("");

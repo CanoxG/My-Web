@@ -1,13 +1,12 @@
 import nodeMailer from "nodemailer";
 
-
 // Assign a Variable to Our Password & E-mail
 const PASSWORD = process.env.PASSWORD
 const TO_EMAIL = process.env.TO_EMAIL
 const FROM_EMAIL = process.env.FROM_EMAIL
 
 export default async function contact(req, res) {
-  // Checking Heroku Log to See the EVN files
+  // Checking Host Log to See the EVN files
   console.log({ PASSWORD, TO_EMAIL, FROM_EMAIL })
 
 
