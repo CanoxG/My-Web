@@ -5,6 +5,7 @@
     height: 40px;
     width: 40px;
     transition: color 3s;
+    margin-bottom: 10px;
 }
 
 .btn:hover {

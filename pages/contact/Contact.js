@@ -68,7 +68,7 @@ export default function Contact() {
 
   return (
     <Container>
-      <div id={"contact"} className="px-6 pt-20">
+      <div id={"contact"} className="px-4 pt-20">
         <div className="flex justify-center">
           <H2>
             CONTACT US

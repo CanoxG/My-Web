@@ -8,7 +8,7 @@ export function Input({
 }) {
   return (
     <>
-      <div className="flex flex-col sm:justify-center pt-5">
+      <div className="flex flex-col sm:justify-center pt-4">
         <div className=" flex justify-center px-1 pt-4">
           <label
             htmlFor="name"

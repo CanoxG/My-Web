@@ -7,7 +7,7 @@ export default function Button() {
     <Link href={"/#home"}>
       <a>
         <button>
-          <div className={`animate-bounce ${styles.btn}`}>⌃</div>
+          <div className={styles.btn}>⌃</div>
         </button>
       </a>
     </Link>
