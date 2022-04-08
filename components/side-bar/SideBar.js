@@ -7,6 +7,7 @@ const sideMenu = [
   ['', "HOME", ''],
   ['', "COMPANY", "about"],
   ["", "SERVICES", 'services'],
+  ['', 'PROJECTS', 'projects'],
   ["", "CONTACT", 'contact'],
 ];
 

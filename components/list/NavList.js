@@ -2,10 +2,12 @@ import React from "react";
 import styles from "./NavList.module.css";
 import Link from "next/link";
 
+//
 const menuList = [
   ['', "HOME", 'home'],
   ['', "COMPANY", 'about'],
   ['', "SERVICES", 'services'],
+  ['', 'PROJECTS', 'projects'],
   ["", "CONTACT", 'contact'],
 ];
 

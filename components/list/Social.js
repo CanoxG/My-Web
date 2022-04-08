@@ -5,8 +5,8 @@ import Link from "next/link";
 const SOCIAL_LINKS = [
   ["svg/facebook.svg", "facebook", "https://www.facebook.com/LorienConsultancy"],
   ["svg/linkedin.svg", "linkedin", "https://www.linkedin.com/in/can-guven-5b16b559/"],
-  ["svg/insta.svg", "google", "https://www.instagram.com/cguven/"],
-  ["svg/mail.svg", "mail", "https://www.facebook.com/LorienConsultancy"],
+  ["svg/instagram.svg", "google", "https://www.instagram.com/cguven/"],
+  ["svg/git.svg", "github", "https://github.com/CanoxG"],
 ];
 
 // const SOCIAL_LINKS2 = {
@@ -33,7 +33,7 @@ export default function Social() {
         {/*))}*/}
         {/*/!*OR*!/*/}
         {SOCIAL_LINKS.map(([val, key, path]) => (
-          <li key={key} className="mx-1 bg-white rounded-full w-6">
+          <li key={key} className="mx-1 bg-white rounded-full w-7">
             <Link href={path}>
               <span>
                 <img src={`/${val}`} alt={key} />
